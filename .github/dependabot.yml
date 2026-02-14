@@ -1,0 +1,18 @@
+# Dependabot config - use ecosystem names, NOT file names
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  # For Node.js / package.json projects → use "npm"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  # For Python (pyproject.toml / requirements.txt) → use "pip" or "uv"
+  - package-ecosystem: "uv"
+    directory: "/demo-django"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
