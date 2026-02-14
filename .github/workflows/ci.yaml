@@ -8,8 +8,8 @@ name: CI
 #     branches:
 #       - main
 #       - feature/**
-  on:
-    workflow_dispatch: null
+on:
+  workflow_dispatch: null
 jobs:
   build:
     runs-on: ubuntu-latest
