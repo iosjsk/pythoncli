@@ -9,7 +9,7 @@ name: CI
 #       - main
 #       - feature/**
 on:
-  workflow_dispatch: null
+  workflow_dispatch: 
 jobs:
   build:
     runs-on: ubuntu-latest
